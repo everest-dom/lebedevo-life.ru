@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: 
+Disallow: /img/
+Disallow: /img/
+Disallow: /js/
+Disallow: /old
+Host: https://lebedevo-life.ru

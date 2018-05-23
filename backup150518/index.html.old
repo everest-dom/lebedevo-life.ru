@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="ru">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1">   -->
+    <!-- адаптив пока скрываем -->
+ <style>
+    html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:0.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace, monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}html{font-size:10px;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;line-height:1.42857143;color:#333;background-color:#fff}input,button,select,textarea{font-family:inherit;font-size:inherit;line-height:inherit}a{color:#337ab7;text-decoration:none}a:hover,a:focus{color:#23527c;text-decoration:underline}a:focus{outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}figure{margin:0}img{vertical-align:middle}.img-responsive{display:block;max-width:100%;height:auto}.img-rounded{border-radius:6px}.img-thumbnail{padding:4px;line-height:1.42857143;background-color:#fff;border:1px solid #ddd;border-radius:4px;-webkit-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;display:inline-block;max-width:100%;height:auto}.img-circle{border-radius:50%}hr{margin-top:20px;margin-bottom:20px;border:0;border-top:1px solid #eee}.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0}.sr-only-focusable:active,.sr-only-focusable:focus{position:static;width:auto;height:auto;margin:0;overflow:visible;clip:auto}[role="button"]{cursor:pointer}.container{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}@media (min-width:768px){.container{width:750px}}@media (min-width:992px){.container{width:960px}}@media (min-width:1200px){.container{width:1170px}}.container-fluid{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}.row{margin-left:-15px;margin-right:-15px}.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12{position:relative;min-height:1px;padding-left:15px;padding-right:15px}.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12{float:left}.col-xs-12{width:100%}.col-xs-11{width:91.66666667%}.col-xs-10{width:83.33333333%}.col-xs-9{width:75%}.col-xs-8{width:66.66666667%}.col-xs-7{width:58.33333333%}.col-xs-6{width:50%}.col-xs-5{width:41.66666667%}.col-xs-4{width:33.33333333%}.col-xs-3{width:25%}.col-xs-2{width:16.66666667%}.col-xs-1{width:8.33333333%}.col-xs-pull-12{right:100%}.col-xs-pull-11{right:91.66666667%}.col-xs-pull-10{right:83.33333333%}.col-xs-pull-9{right:75%}.col-xs-pull-8{right:66.66666667%}.col-xs-pull-7{right:58.33333333%}.col-xs-pull-6{right:50%}.col-xs-pull-5{right:41.66666667%}.col-xs-pull-4{right:33.33333333%}.col-xs-pull-3{right:25%}.col-xs-pull-2{right:16.66666667%}.col-xs-pull-1{right:8.33333333%}.col-xs-pull-0{right:auto}.col-xs-push-12{left:100%}.col-xs-push-11{left:91.66666667%}.col-xs-push-10{left:83.33333333%}.col-xs-push-9{left:75%}.col-xs-push-8{left:66.66666667%}.col-xs-push-7{left:58.33333333%}.col-xs-push-6{left:50%}.col-xs-push-5{left:41.66666667%}.col-xs-push-4{left:33.33333333%}.col-xs-push-3{left:25%}.col-xs-push-2{left:16.66666667%}.col-xs-push-1{left:8.33333333%}.col-xs-push-0{left:auto}.col-xs-offset-12{margin-left:100%}.col-xs-offset-11{margin-left:91.66666667%}.col-xs-offset-10{margin-left:83.33333333%}.col-xs-offset-9{margin-left:75%}.col-xs-offset-8{margin-left:66.66666667%}.col-xs-offset-7{margin-left:58.33333333%}.col-xs-offset-6{margin-left:50%}.col-xs-offset-5{margin-left:41.66666667%}.col-xs-offset-4{margin-left:33.33333333%}.col-xs-offset-3{margin-left:25%}.col-xs-offset-2{margin-left:16.66666667%}.col-xs-offset-1{margin-left:8.33333333%}.col-xs-offset-0{margin-left:0}@media (min-width:768px){.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12{float:left}.col-sm-12{width:100%}.col-sm-11{width:91.66666667%}.col-sm-10{width:83.33333333%}.col-sm-9{width:75%}.col-sm-8{width:66.66666667%}.col-sm-7{width:58.33333333%}.col-sm-6{width:50%}.col-sm-5{width:41.66666667%}.col-sm-4{width:33.33333333%}.col-sm-3{width:25%}.col-sm-2{width:16.66666667%}.col-sm-1{width:8.33333333%}.col-sm-pull-12{right:100%}.col-sm-pull-11{right:91.66666667%}.col-sm-pull-10{right:83.33333333%}.col-sm-pull-9{right:75%}.col-sm-pull-8{right:66.66666667%}.col-sm-pull-7{right:58.33333333%}.col-sm-pull-6{right:50%}.col-sm-pull-5{right:41.66666667%}.col-sm-pull-4{right:33.33333333%}.col-sm-pull-3{right:25%}.col-sm-pull-2{right:16.66666667%}.col-sm-pull-1{right:8.33333333%}.col-sm-pull-0{right:auto}.col-sm-push-12{left:100%}.col-sm-push-11{left:91.66666667%}.col-sm-push-10{left:83.33333333%}.col-sm-push-9{left:75%}.col-sm-push-8{left:66.66666667%}.col-sm-push-7{left:58.33333333%}.col-sm-push-6{left:50%}.col-sm-push-5{left:41.66666667%}.col-sm-push-4{left:33.33333333%}.col-sm-push-3{left:25%}.col-sm-push-2{left:16.66666667%}.col-sm-push-1{left:8.33333333%}.col-sm-push-0{left:auto}.col-sm-offset-12{margin-left:100%}.col-sm-offset-11{margin-left:91.66666667%}.col-sm-offset-10{margin-left:83.33333333%}.col-sm-offset-9{margin-left:75%}.col-sm-offset-8{margin-left:66.66666667%}.col-sm-offset-7{margin-left:58.33333333%}.col-sm-offset-6{margin-left:50%}.col-sm-offset-5{margin-left:41.66666667%}.col-sm-offset-4{margin-left:33.33333333%}.col-sm-offset-3{margin-left:25%}.col-sm-offset-2{margin-left:16.66666667%}.col-sm-offset-1{margin-left:8.33333333%}.col-sm-offset-0{margin-left:0}}@media (min-width:992px){.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12{float:left}.col-md-12{width:100%}.col-md-11{width:91.66666667%}.col-md-10{width:83.33333333%}.col-md-9{width:75%}.col-md-8{width:66.66666667%}.col-md-7{width:58.33333333%}.col-md-6{width:50%}.col-md-5{width:41.66666667%}.col-md-4{width:33.33333333%}.col-md-3{width:25%}.col-md-2{width:16.66666667%}.col-md-1{width:8.33333333%}.col-md-pull-12{right:100%}.col-md-pull-11{right:91.66666667%}.col-md-pull-10{right:83.33333333%}.col-md-pull-9{right:75%}.col-md-pull-8{right:66.66666667%}.col-md-pull-7{right:58.33333333%}.col-md-pull-6{right:50%}.col-md-pull-5{right:41.66666667%}.col-md-pull-4{right:33.33333333%}.col-md-pull-3{right:25%}.col-md-pull-2{right:16.66666667%}.col-md-pull-1{right:8.33333333%}.col-md-pull-0{right:auto}.col-md-push-12{left:100%}.col-md-push-11{left:91.66666667%}.col-md-push-10{left:83.33333333%}.col-md-push-9{left:75%}.col-md-push-8{left:66.66666667%}.col-md-push-7{left:58.33333333%}.col-md-push-6{left:50%}.col-md-push-5{left:41.66666667%}.col-md-push-4{left:33.33333333%}.col-md-push-3{left:25%}.col-md-push-2{left:16.66666667%}.col-md-push-1{left:8.33333333%}.col-md-push-0{left:auto}.col-md-offset-12{margin-left:100%}.col-md-offset-11{margin-left:91.66666667%}.col-md-offset-10{margin-left:83.33333333%}.col-md-offset-9{margin-left:75%}.col-md-offset-8{margin-left:66.66666667%}.col-md-offset-7{margin-left:58.33333333%}.col-md-offset-6{margin-left:50%}.col-md-offset-5{margin-left:41.66666667%}.col-md-offset-4{margin-left:33.33333333%}.col-md-offset-3{margin-left:25%}.col-md-offset-2{margin-left:16.66666667%}.col-md-offset-1{margin-left:8.33333333%}.col-md-offset-0{margin-left:0}}@media (min-width:1200px){.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12{float:left}.col-lg-12{width:100%}.col-lg-11{width:91.66666667%}.col-lg-10{width:83.33333333%}.col-lg-9{width:75%}.col-lg-8{width:66.66666667%}.col-lg-7{width:58.33333333%}.col-lg-6{width:50%}.col-lg-5{width:41.66666667%}.col-lg-4{width:33.33333333%}.col-lg-3{width:25%}.col-lg-2{width:16.66666667%}.col-lg-1{width:8.33333333%}.col-lg-pull-12{right:100%}.col-lg-pull-11{right:91.66666667%}.col-lg-pull-10{right:83.33333333%}.col-lg-pull-9{right:75%}.col-lg-pull-8{right:66.66666667%}.col-lg-pull-7{right:58.33333333%}.col-lg-pull-6{right:50%}.col-lg-pull-5{right:41.66666667%}.col-lg-pull-4{right:33.33333333%}.col-lg-pull-3{right:25%}.col-lg-pull-2{right:16.66666667%}.col-lg-pull-1{right:8.33333333%}.col-lg-pull-0{right:auto}.col-lg-push-12{left:100%}.col-lg-push-11{left:91.66666667%}.col-lg-push-10{left:83.33333333%}.col-lg-push-9{left:75%}.col-lg-push-8{left:66.66666667%}.col-lg-push-7{left:58.33333333%}.col-lg-push-6{left:50%}.col-lg-push-5{left:41.66666667%}.col-lg-push-4{left:33.33333333%}.col-lg-push-3{left:25%}.col-lg-push-2{left:16.66666667%}.col-lg-push-1{left:8.33333333%}.col-lg-push-0{left:auto}.col-lg-offset-12{margin-left:100%}.col-lg-offset-11{margin-left:91.66666667%}.col-lg-offset-10{margin-left:83.33333333%}.col-lg-offset-9{margin-left:75%}.col-lg-offset-8{margin-left:66.66666667%}.col-lg-offset-7{margin-left:58.33333333%}.col-lg-offset-6{margin-left:50%}.col-lg-offset-5{margin-left:41.66666667%}.col-lg-offset-4{margin-left:33.33333333%}.col-lg-offset-3{margin-left:25%}.col-lg-offset-2{margin-left:16.66666667%}.col-lg-offset-1{margin-left:8.33333333%}.col-lg-offset-0{margin-left:0}}.clearfix:before,.clearfix:after,.container:before,.container:after,.container-fluid:before,.container-fluid:after,.row:before,.row:after{content:" ";display:table}.clearfix:after,.container:after,.container-fluid:after,.row:after{clear:both}.center-block{display:block;margin-left:auto;margin-right:auto}.pull-right{float:right !important}.pull-left{float:left !important}.hide{display:none !important}.show{display:block !important}.invisible{visibility:hidden}.text-hide{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0}.hidden{display:none !important}.affix{position:fixed}
+  </style>
+
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Коттеджный поселок Лебедево Лайф</title>
+
+    <!-- Bootstrap v3.3.7 Grid Styles -->
+
+
+    <!-- end header style -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://s://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://s://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    <!--<script src="js/jquery.min.js"></script> -->
+    <!-- Google Tag Manager -->
+
+  <!--  <script src="js/fix_menu.js"></script>
+    <script src="js/bootstrap.js"></script> -->
+
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MVQVTLC');
+
+    </script>
+    <!-- End Google Tag Manager -->
+    <link rel="stylesheet" href="one-block.css">
+    
+<script src="https://r7k12.ru/scripts/c96468b204dc4f603bab9401d242da28/counter.js"></script>
+<script>R7K12.send('pageview');</script>
+    
+</head>
+
+<body>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MVQVTLC" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- =========== Начало header =========== -->
+    <section id="header">
+
+        <div class="container">
+            <div class="row">
+                <div class="header_col">
+                    <div class="header-top">
+                        <div class="header-top_left">
+                            <img src="img/logo_2.svg" alt="" class="header-top_left_img">
+                        </div>
+                        <div class="header-top_right">
+                            <p class="contant_info_tel contant_info_tel_white phone_alloka"><span>+7 (4852) 44-02-02 </span><br> ежедневно с 9 до 18</p><br>
+                            <a href="#15_plus" class="button_red" data-toggle="modal" class="item_button">записаться на просмотр</a>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <!-- end header top -->
+
+                    <h1 class="header_h1">Коттеджный <br> поселок<br> в черте Ярославля</h1>
+
+                    <a href="#Genplan" class="genplan_wrap" data-toggle="modal" class="item_button">
+                        <img src="img/genplan_link.png" alt="">
+                        <p class="genplan_p">Генплан<br> поселка</p>
+                    </a>
+                </div>
+                <!-- end col
+
+       <div class="col-xs-4 header_col_right">
+        <a href="#" class="action_home wow bounce" data-wow-iteration="3"></a>
+
+        <div class="action_home_box">
+          <div class="action_home_box_wrap">
+            <a href="#" class="close_button_action"></a>
+            <p class="action_box_title_p">Именно этот дом свободен<br> 
+              и продается со скидкой</p>
+              <p class="action_box_prise_p"><span>300 000 рублей</span><br>
+                до 30 апреля</p>
+              </div>
+              <!-- end action home wrap -->
+            </div>
+            <!-- end action home -->
+        </div>
+        <!-- end header_col_right -->
+        <!--        </div>-->
+        <!-- end row -->
+        <!--  </div-->
+        <!-- end container -->
+    </section>
+    <!-- =========== Конец header  =========== -->
+  <!-- =========== Начало main menu =========== -->
+    <div class="main_menu RBsticky-element">
+        <div class="container">
+            <div class="sandwich-button">
+                <div class="sandwich-menu"></div>
+                <div class="sandwich-menu"></div>
+                <div class="sandwich-menu"></div>
+            </div>
+            <div class="main_menu_left">
+                <a href="#header" class="toplink"><img src="img/logo_min_2.svg" alt="" class="logo_min"></a>
+            </div>
+
+            <div class="contant_info">
+                <p class="contant_info_tel phone_alloka">
+                    <a href="+7 (4852) 44-02-02"><img src="img/tel_min.png" alt="" class="contant_info_tel_img phone_alloka">
+                        +7 (4852) 44-02-02</a>
+                    ежедневно с 9 до 18</p>
+                <a href="#15_plus" class="contant_info_a" data-toggle="modal" class="item_button">заказать звонок</a>
+            </div>
+            <!-- end main menu left -->
+<!--            <div class="main_menu_right">-->
+                <ul class="main_menu_ul">
+                    <li><a href="#section2" class="toplink">Коммуникации</a></li>
+                    <li><a href="#section3" class="toplink">Инфраструктура</a></li>
+                    <li><a href="#section5" class="toplink">Планировки с ценами</a></li>
+                    <li><a href="#section6" class="toplink">Отзывы</a></li>
+                    <li><a href="#section8" class="toplink">Контакты</a></li>
+                </ul>
+                <!-- end ul -->
+
+                <!-- end contant_info -->
+<!--            </div>-->
+            <!-- end main menu right -->
+            <div class="clearfix"></div>
+        </div>
+        <!-- end container -->
+
+    </div>
+    <!-- =========== Конец main menu  =========== -->
+
+    <!-- =========== Начало section2 =========== -->
+    <section id="section2">
+        <div class="container">
+            <h2 class="h2_main h2_main_white">Почему он один такой или<br> 23 причины приехать посмотреть
+            </h2>
+            <div class="row row_section_2">
+                <div class="col-md-4 col-sm-6 col-xs-6 col-numbers">
+                    <p class="bg_numbers_p">1</p>
+                    <div class="numbers_content_wrap">
+                        <p class="numbers_title_p">Закрытый коттеджный<br> поселок с видеонаблюдением<br> в черте города</p>
+                        <p class="numbers_sub-title_p">Коттеджный поселок по периметру огорожен 3 метровым забором и будет закрываться на ночь. Для гостей выполнена гостевая парковка.</p>
+
+                    </div>
+                </div>
+                <!-- end col -->
+                <div class="col-md-4 col-sm-6 col-xs-6 col-numbers">
+                    <p class="bg_numbers_p">2</p>
+                    <div class="numbers_content_wrap">
+                        <p class="numbers_title_p">Детский городок и<br> спортивная площадка<br> на территории поселка</p>
+
+
+                    </div>
+                </div>
+                <!-- end col -->
+                <div class="col-md-4 col-sm-6 col-xs-6 col-numbers">
+                    <p class="bg_numbers_p">3</p>
+                    <div class="numbers_content_wrap">
+                        <p class="numbers_title_p">Дороги с уличным<br> освещением, которые<br> чистятся </p>
+
+
+                    </div>
+                </div>
+                <!-- end col -->
+                <div class="col-md-4 col-sm-6 col-xs-6 col-numbers">
+                    <p class="bg_numbers_p">4</p>
+                    <div class="numbers_content_wrap">
+                        <p class="numbers_title_p">Тарифы и налоги меньше,<br> а пользуетесь всеми<br> городскими удобствами</p>
+                        <p class="numbers_sub-title_p">Категория земли – ИЖС. У вас будет сельская прописка, тарифы и налоги. А пользоваться будете всеми городскими удобствами – сады, школы, магазины и аптеки в шаговой доступности</p>
+
+                    </div>
+                </div>
+                <!-- end col -->
+                <div class="col-md-4 col-sm-6 col-xs-6 col-numbers">
+                    <p class="bg_numbers_p">5</p>
+                    <div class="numbers_content_wrap">
+                        <p class="numbers_title_p">Поселок газифицирован.<br> Коммуникации подведены<br> и оформлены
+                        </p>
+                    </div>
+                </div>
+                <!-- end col -->
+                <div class="col-md-4 col-sm-6 col-xs-6 col-numbers">
+                    <p class="bg_numbers_p">6</p>
+                    <div class="numbers_content_wrap">
+                        <p class="numbers_title_p">Есть готовые дома,<br> которые можно<br> посмотреть
+                        </p>
+                    </div>
+                </div>
+                <!-- end col -->
+                <div class="col-md-4 col-sm-6 col-xs-6 col-numbers">
+                    <p class="bg_numbers_p">7</p>
+                    <div class="numbers_content_wrap">
+                        <p class="numbers_title_p">Всего 15 мин до<br> Красной площади Ярославля<br> на автобусе и 10 на авто
+                        </p>
+                    </div>
+                </div>
+                <!-- end col -->
+                <div class="col-md-4 col-sm-6 col-xs-6 col-numbers">
+                    <p class="bg_numbers_p">8</p>
+                    <div class="numbers_content_wrap">
+                        <p class="numbers_title_p">Почтовый адрес и<br> прописка
+                        </p>
+                    </div>
+                </div>
+                <!-- end col -->
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <div class="col-numbers col-numbers-last">
+                    <a href="#15_plus" class="col-numbers-last_wrap" data-toggle="modal" class="item_button">
+                        <p class="numbers-last-title-p">
+                            УЗНАТЬ ЕЩЕ<br>
+                            <span>15 ПРИЧИН</span>
+                        </p>
+                        <p class="numbers-last-subtitle-p">Прямо сейчас</p>
+                    </a>
+                    <!-- end col-numbers-last_wrap -->
+                </div>
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- =========== Конец section2  =========== -->
+    <!-- =========== Начало section3 =========== -->
+    <section id="section3">
+    <div class="container">
+        <h2 class="h2_main">Городская инфраструктура<br> в шаговой доступности</h2>
+        <img src="img/infrastr.png" alt="" class="infrastr_img">
+    </div>
+        <!-- end container -->
+    </section>
+    <!-- =========== Конец section3  =========== -->
+    
+    <!-- =========== Начало section4 =========== -->
+    <section id="section4">
+        <div class="container">
+            <div class="section4_wrap">
+                <h2 class="h2_main h2_main_white">Фотогаллерея поселка</h2>
+
+                <ul class="rslides">
+                    <li><img src="img/gallery/g1.jpg" alt=""></li>
+                    <li><img src="img/gallery/g2.jpg" alt=""></li>
+                    <li><img src="img/gallery/g3.jpg" alt=""></li>
+                    <li><img src="img/gallery/g4.jpg" alt=""></li>
+                    <li><img src="img/gallery/g5.jpg" alt=""></li>
+                    <li><img src="img/gallery/g6.jpg" alt=""></li>
+                    <li><img src="img/gallery/g7.jpg" alt=""></li>
+                    <li><img src="img/gallery/g8.jpg" alt=""></li>
+                    <li><img src="img/gallery/g9.jpg" alt=""></li>
+                    <li><img src="img/gallery/g10.jpg" alt=""></li>
+                    <li><img src="img/gallery/g11.jpg" alt=""></li>
+                </ul>
+
+            </div>
+            <!-- end section4_wrap -->
+        </div>
+        <!-- end container -->
+    </section>
+        <!-- =========== Начало section5 =========== -->
+    <section id="section5">
+        <div class="container">
+            <h2 class="h2_main">Дома которые вы можете посмотреть</h2>
+            <div class="section5_wrap">
+
+                <!-- begin item_house -->
+                <div class="item_house col-md-4 col-sm-6 col-xs-6">
+                    <a href="#Projects" class="item_house_wrap" data-toggle="modal" class="item_button">
+                        <img src="img/house/tx74_obr.jpg" alt="" class="item_img">
+                        <div class="item_left">
+                            <p class="item_p_title">таунхаус </p>
+                            <p class="item_p plocad">площадь: 74 м2</p>
+                            <a href="#Projects" data-toggle="modal" class="item_button">Посмотреть</a>
+                        </div>
+                        <!-- end left -->
+                        <div class="item_right">
+                            <p class="item_p gotovn">Готовность<br> 100%
+                            </p>
+                            <p class="item_p">
+                                Цена от:<br>
+                                <span>1,94</span><br> млн.р.
+                            </p>
+                        </div>
+                        <!-- end right -->
+                    </a>
+                    <!-- end item house wrap  -->
+                </div>
+                <!-- end item_house -->
+
+                <!-- begin item_house -->
+                <div class="item_house col-md-4 col-sm-6 col-xs-6">
+                    <a href="#Projects" class="item_house_wrap" data-toggle="modal" class="item_button">
+                        <img src="img/house/tx100_obr.jpg" alt="" class="item_img">
+                        <div class="item_left">
+                            <p class="item_p_title">таунхаус </p>
+                            <p class="item_p plocad">площадь: 100 м2</p>
+                            <a href="#Projects" data-toggle="modal" class="item_button">Посмотреть</a>
+                        </div>
+                        <!-- end left -->
+                        <div class="item_right">
+                            <p class="item_p gotovn">Готовность<br> 100%
+                            </p>
+                            <p class="item_p">
+                                Цена от:<br>
+                                <span>2,18</span><br> млн.р.
+                            </p>
+                        </div>
+                        <!-- end right -->
+                    </a>
+                    <!-- end item house wrap  -->
+                </div>
+                <!-- end item_house -->
+
+                <!-- begin item_house -->
+                <div class="item_house col-md-4 col-sm-6 col-xs-6">
+                    <a href="#Projects" class="item_house_wrap" data-toggle="modal" class="item_button">
+                        <img src="img/house/tx205_obr.jpg" alt="" class="item_img">
+                        <div class="item_left">
+                            <p class="item_p_title">таунхаус </p>
+                            <p class="item_p plocad">площадь: 105 м2</p>
+                            <a href="#Projects" data-toggle="modal" class="item_button">Посмотреть</a>
+                        </div>
+                        <!-- end left -->
+                        <div class="item_right">
+                            <p class="item_p gotovn">Готовность<br> 70%
+                            </p>
+                            <p class="item_p">
+                                Цена от:<br>
+                                <span>2,15</span><br> млн.р.
+                            </p>
+                        </div>
+                        <!-- end right -->
+                    </a>
+                    <!-- end item house wrap  -->
+                </div>
+                <!-- end item_house -->
+
+                <!-- begin item_house -->
+                <div class="item_house col-md-4 col-sm-6 col-xs-6">
+                    <a href="#Projects" class="item_house_wrap" data-toggle="modal" class="item_button">
+                        <img src="img/house/dom80_obr.jpg" alt="" class="item_img">
+                        <div class="item_left">
+                            <p class="item_p_title">Дом 1 эт</p>
+                            <p class="item_p plocad">площадь: 80 м2</p>
+                            <a href="#Projects" data-toggle="modal" class="item_button">Посмотреть</a>
+                        </div>
+                        <!-- end left -->
+                        <div class="item_right">
+                            <p class="item_p gotovn">Готовность<br> 80%
+                            </p>
+                            <p class="item_p">
+                                Цена от:<br>
+                                <span>2,87</span><br> млн.р.
+                            </p>
+                        </div>
+                        <!-- end right -->
+                    </a>
+                    <!-- end item house wrap  -->
+                </div>
+                <!-- end item_house -->
+
+                <!-- begin item_house -->
+                <div class="item_house col-md-4 col-sm-6 col-xs-6">
+                    <a href="#Projects" class="item_house_wrap" data-toggle="modal" class="item_button">
+                        <img src="img/house/kottedg110_obr.jpg" alt="" class="item_img">
+                        <div class="item_left">
+                            <p class="item_p_title">Коттедж</p>
+                            <p class="item_p plocad">площадь: 110 м2</p>
+                            <a href="#Projects" data-toggle="modal" class="item_button">Посмотреть</a>
+                        </div>
+                        <!-- end left -->
+                        <div class="item_right">
+                            <p class="item_p gotovn">Готовность<br> 100%
+                            </p>
+                            <p class="item_p">
+                                Цена от:<br>
+                                <span>2,94</span><br> млн.р.
+                            </p>
+                        </div>
+                        <!-- end right -->
+                    </a>
+                    <!-- end item house wrap  -->
+                </div>
+                <!-- end item_house -->
+
+                <!-- begin item_house -->
+                <div class="item_house col-md-4 col-sm-6 col-xs-6">
+                    <a href="#Projects" class="item_house_wrap" data-toggle="modal" class="item_button">
+                        <img src="img/house/kottedg125_obr.jpg" alt="" class="item_img">
+                        <div class="item_left">
+                            <p class="item_p_title">Коттедж</p>
+                            <p class="item_p plocad">площадь: 125 м2</p>
+                            <a href="#Projects" data-toggle="modal" class="item_button">Посмотреть</a>
+                        </div>
+                        <!-- end left -->
+                        <div class="item_right">
+                            <p class="item_p gotovn">Готовность<br> 100%
+                            </p>
+                            <p class="item_p">
+                                Цена от:<br>
+                                <span>3,19</span><br> млн.р.
+                            </p>
+                        </div>
+                        <!-- end right -->
+                    </a>
+                    <!-- end item house wrap  -->
+                </div>
+                <!-- end item_house -->
+
+                <!-- begin item_house -->
+                <div class="item_house col-md-4 col-sm-6 col-xs-6">
+                    <a href="#Projects" class="item_house_wrap" data-toggle="modal" class="item_button">
+                        <img src="img/house/kottedg140_obr.jpg" alt="" class="item_img">
+                        <div class="item_left">
+                            <p class="item_p_title">Коттедж</p>
+                            <p class="item_p plocad">площадь: 140 м2</p>
+                            <a href="#Projects" data-toggle="modal" class="item_button">Посмотреть</a>
+                        </div>
+                        <!-- end left -->
+                        <div class="item_right">
+                            <p class="item_p gotovn">Готовность<br> 100%
+                            </p>
+                            <p class="item_p">
+                                Цена от:<br>
+                                <span>3,36</span><br> млн.р.
+                            </p>
+                        </div>
+                        <!-- end right -->
+                    </a>
+                    <!-- end item house wrap  -->
+                </div>
+                <!-- end item_house -->
+
+                <!-- begin item_house -->
+                <div class="item_house col-md-4 col-sm-6 col-xs-6">
+                    <a href="#Projects" class="item_house_wrap" data-toggle="modal" class="item_button">
+                        <img src="img/house/kottedg160_obr.jpg" alt="" class="item_img">
+                        <div class="item_left">
+                            <p class="item_p_title">Коттедж</p>
+                            <p class="item_p plocad">площадь: 160 м2</p>
+                            <a href="#Projects" data-toggle="modal" class="item_button">Посмотреть</a>
+                        </div>
+                        <!-- end left -->
+                        <div class="item_right">
+                            <p class="item_p gotovn">Готовность<br> 80%
+                            </p>
+                            <p class="item_p">
+                                Цена от:<br>
+                                <span>3,49</span><br> млн.р.
+                            </p>
+                        </div>
+                        <!-- end right -->
+                    </a>
+                    <!-- end item house wrap  -->
+                </div>
+                <!-- end item_house -->
+                <!-- begin item_house -->
+                <div class="item_house item_house_last col-md-4 col-sm-6 col-xs-6">
+                    <p class="item_house_last_title">
+                        большой каталог<br> проектов с<br> готовыми домами<br> в поселке
+                    </p>
+                    <p class="item_house_last_subtitle">
+                        с ценами и <br> планировками
+                    </p>
+
+                    <a href="#Projects_download" class="download" data-toggle="modal">
+                        <span>Скачать</span>
+                    </a>
+
+
+                </div>
+                <!-- end item_house -->
+            </div>
+            <!-- end section_wrap_5 -->
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- =========== Конец section5  =========== -->
+    <!-- =========== Начало section6 =========== -->
+    <section id="section6">
+        <div class="container">
+            <h2 class="h2_main">Отзывы о поселке и застройщике
+            </h2>
+
+            <div class="section6_wrap">
+                <div class="row">
+                    <!-- otziv -->
+                    <div class="col-md-6 col-sm-6 col-xs-12 otziv">
+                        <div class="otziv_left">
+                            <img src="img/1.png" alt="" class="otziv_img">
+                        </div>
+                        <!-- end left -->
+                        <div class="otziv_right">
+                            <div class="text_review_wrap">
+                                <p class="text_review_title">– Для морозов -25 все приспособлено</p>
+                                <p class="text_review_p text_review">
+                                    Пишу свой отзыв через год, прожил в нем зиму. Поэтому объективно могу сказать, для морозов -25, здесь все приспособлено. Котел отработал без единого замечания. Купил коттедж добротный, оконные блоки, отдельное спасибо ребятам, экономить не стали. Меня все устраивает, сам переехал с севера, и сейчас наслаждаюсь собственным участком. Про метраж – отдельная благодарность: огромная кухня - зал, на которой можно собраться всей семьей. Три комнаты на втором этаже – мне раньше и в голову бы не пришло, что все это могу себе позволить. Одно беспокоит, пока ни разу не соприкасался с автономной канализацией, но говорят, что это не проблема. Спасибо Андрею, Константину за внимание и понимание к моим опасениям.
+                                </p>
+                            </div>
+                            <!-- конец текста -->
+                            <p class="text_review_avtor_p"><img src="img/vk_logo.png" alt="" class="vk_reviev_img">Виктор Михайлович Сеньчюков
+                            </p>
+                        </div>
+                        <!-- end right -->
+                        <div class="clearfix"></div>
+                    </div>
+                    <!-- end otziv -->
+                    <!-- otziv -->
+                    <div class="col-md-6 col-sm-6 col-xs-12 otziv">
+                        <div class="otziv_left">
+                            <img src="img/2.png" alt="" class="otziv_img">
+                        </div>
+                        <!-- end left -->
+                        <div class="otziv_right">
+                            <div class="text_review_wrap">
+                                <p class="text_review_title">– Сдали вовремя, качественно и без замечаний</p>
+                                <p class="text_review_p text_review">
+                                    Сам из Коноши, работаю в Архангельской области. Имеем подряды и выполняем работы так же в Ярославле, вот и присмотрел для себя вариант строительства дома. В один из выходных с моим коллегой проехали посмотреть на строительную площадку, там велось строительство 5 домов. Посмотрев саму стройку, а мы сами строители, был немножко удивлен качеству и соответствию выполняемых работ проекту. Работу в Ярославле нашел, а вот с жильем был выбор. Остановились все-таки на доме, место выбрали исходя из удобства, рядом садик, аптека, магазины, да до центра города, до Красной площади от дома 17 минут на машине. Очень порадовало то, что оплачивал строительство по этапам, вносил деньги после того как мой товарищ лично приезжал и принимал объем работ.
+                                </p>
+                            </div>
+                            <!-- конец текста -->
+                            <p class="text_review_avtor_p"><img src="img/vk_logo.png" alt="" class="vk_reviev_img">Сергей Волошко
+                            </p>
+                        </div>
+                        <!-- end right -->
+                        <div class="clearfix"></div>
+                    </div>
+                    <!-- end otziv -->
+                </div>
+                <!-- end row -->
+                <div class="row">
+                    <!-- otziv -->
+                    <div class="col-md-6 col-sm-6 col-xs-12 otziv">
+                        <div class="otziv_left">
+                            <img src="img/3.png" alt="" class="otziv_img">
+                        </div>
+                        <!-- end left -->
+                        <div class="otziv_right">
+                            <div class="text_review_wrap">
+                                <p class="text_review_title">– Для такого качества строительства и материалов очень приятный ценник</p>
+                                <p class="text_review_p text_review">
+                                    Купил таунхаус в Ярославле вдвоем с братом, на две семьи. Сейчас приезжаю туда раз в неделю и смотрю, как идут отделочные работы. Дифирамбы петь не буду, но работают без остановок, все в графике. Как оговаривали, так и делают. Правда бригадир постоянно со мной на связи, иногда даже устаю, то там плитку нашел дешевле, согласуете?, то давайте лампы все светодиодные поставим для экономии, короче крутятся парни. Меня это радует. Еще одно наблюдение (в принципе, из-за него и купил жилье именно тут), для такого качества строительства и материалов, ну очень приятный ценник. Советую всем обратить внимание.
+                                </p>
+                            </div>
+                            <!-- конец текста -->
+                            <p class="text_review_avtor_p"><img src="img/vk_logo.png" alt="" class="vk_reviev_img">Владислав Суранов
+                            </p>
+                        </div>
+                        <!-- end right -->
+                        <div class="clearfix"></div>
+                    </div>
+                    <!-- end otziv -->
+                    <!-- otziv -->
+                    <div class="col-md-6 col-sm-6 col-xs-12 otziv">
+                        <div class="otziv_left">
+                            <img src="img/4.png" alt="" class="otziv_img">
+                        </div>
+                        <!-- end left -->
+                        <div class="otziv_right">
+                            <div class="text_review_wrap">
+                                <p class="text_review_title">– Дешевле квартиры и плюс 4 сотки</p>
+                                <p class="text_review_p text_review">
+                                    Основными условиями в выборе жилья для меня были уют и удобство. Что касается цен, то вообще я начала искать себе квартиру, и самые низкие цены были в пределах 37 000 руб/м2, и то на 0 цикле строительства. Поняла, что готовое не осилю, а вот с нулевым циклом страшновато на год вперед заглядывать. И тут обратила внимание на цены в 20 000 руб/м2. Да конечно это не квартира в многоэтажке, но у тебя тут плюс 4 сотки, да срок возведения от 2 до 2,5 месяцев. Посмотрев полтора месяца на строительство, сама без всяких гидов, решилась - заключила договор, оговорили сроки. Сейчас идет отделка, я не жалею.
+                                </p>
+                            </div>
+                            <!-- конец текста -->
+                            <p class="text_review_avtor_p"><img src="img/vk_logo.png" alt="" class="vk_reviev_img">Ольга Суханова
+                            </p>
+                        </div>
+                        <!-- end right -->
+                        <div class="clearfix"></div>
+                    </div>
+                    <!-- end otziv -->
+
+                </div>
+                <!-- end row -->
+
+            </div>
+            <!-- end section6_wrap -->
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- =========== Конец section6  =========== -->
+    <!-- =========== Начало section7  =========== -->
+    <section id="section7">
+        <div class="container">
+            <h2 class="h2_main">Заказать экскурсию в поселок</h2>
+            <form class="zakaz_ekrsk_form validate" action="https://crm.everest-dom.com/index.php?entryPoint=WebToLeadCapture" method="POST" name="WebToLeadForm">
+                <div class="form_group">
+                    <input type="text" id="section_intro_name" value="" name="last_name" class="zakaz_ekrsk_input required" placeholder="Ваше имя">
+                </div>
+
+                <div class="form_group">
+                    <input type="tel" id="section_intro_tel" class="zakaz_ekrsk_input required" value="" name="phone_mobile" placeholder="Ваш телефон">
+                </div>
+
+                <input type="submit" value="Оставить заявку" class="zakaz_ekrsk_button required">
+                <input id="assigned_user_id" type="hidden" name="assigned_user_id" value="" />
+                <input id="campaign_id" type="hidden" name="campaign_id" value="8797054e-8c36-5671-5e39-5572a5526bf3" />
+                <input type="hidden" name="hidden" value="Посетите готовые дома" />
+                <input type="hidden" name="lead_source" value="Web Site" />
+                <input type="hidden" name="redirect_url" value="/thank-you.php" />
+                <input type="hidden" name="req_id" value="last_name;" />
+                <input type="hidden" name="lead_source_description" value="" />
+            </form>
+
+
+            <img src="img/ukaz.png" alt="" class="ukaz_img">
+
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- =========== Конец section7  =========== -->
+
+    <!-- =========== Начало section8  =========== -->
+    <section id="section8">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-5 location_left">
+                   <div class="row">
+                    <div class="location_left_wrap">
+                        <p class="location_title_p">ЗВОНИТЕ</p>
+                        <p class="location_sub-title_p phone_alloka">8 (4852) 44-02-02</p>
+
+                        <p class="location_title_p">ПРИХОДИТЕ</p>
+                        <p class="location_sub-title_p">ул. Революционная,18<br> (вход с улицы)
+                        </p>
+
+                        <img src="img/logo_everest.png" alt="" class="logo_everest_img">
+                        <p class="logo_everest_p">Коттеджный поселок Лебедево-Лайф<br> в черте Ярославля</p>
+                        </div>
+                    </div>
+                    <!-- end location left wrap -->
+                </div>
+                <!-- end location_left -->
+                <div class="col-md-7 location_right">
+                    <div id="map"></div>
+                </div>
+                <!-- end location_right -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- =========== Конец section8  =========== -->
+    
+    
+    
+    <!-- =========== Конец section8  =========== -->
+    <!-- Modal Projects-->
+    <div class="modal fade modal-progects" id="Projects" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header modal-header-projects">
+                    <button type="button" class="close close-button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <div class="clearfix"></div>
+                </div>
+                <!-- end header -->
+                <div class="modal-body modal-body-projects">
+                    <h3 class="projects-modal-h3">Получите цены, планировки и фото<br>этого проекта</h3>
+                    <form class="plan_form form_center validate" action="https://crm.everest-dom.com/index.php?entryPoint=WebToLeadCapture" method="POST" name="WebToLeadForm">
+
+                        <div class="form_group">
+                            <input type="text" id="section_intro_name" value="" name="last_name" class="plan_form_input margin-right-full no-margin-right required" placeholder="Ваше имя">
+                        </div>
+                        <br>
+                        <div class="form_group">
+                            <input type="tel" id="section_intro_tel" class="plan_form_input required" value="" name="phone_mobile" placeholder="Ваш телефон">
+                        </div>
+                        <br>
+                        <input type="submit" value="получить" class="plan_form_submit form_submit_red form_submit_red_modal required">
+
+                        <input id="assigned_user_id" type="hidden" name="assigned_user_id" value="" />
+                        <input id="campaign_id" type="hidden" name="campaign_id" value="8797054e-8c36-5671-5e39-5572a5526bf3" />
+                        <input type="hidden" name="hidden" value="Посетите готовые дома" />
+                        <input type="hidden" name="lead_source" value="Web Site" />
+                        <input type="hidden" name="redirect_url" value="/thank-you.php" />
+                        <input type="hidden" name="req_id" value="last_name;" />
+                        <input type="hidden" name="lead_source_description" value="" />
+                    </form>
+                </div>
+                <!-- end body -->
+                <div class="modal-footer modal-footer-projects">
+
+                </div>
+                <!-- end footer -->
+            </div>
+        </div>
+    </div>
+    <!-- end modal progect -->
+    <!-- Modal Projects download-->
+    <div class="modal fade modal-progects" id="Projects_download" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header modal-header-projects">
+                    <button type="button" class="close close-button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <div class="clearfix"></div>
+                </div>
+                <!-- end header -->
+                <div class="modal-body modal-body-projects">
+                    <h3 class="projects-modal-h3">Каталог с готовыми домами<br>в поселке</h3>
+                    <form class="plan_form form_center validate" action="https://crm.everest-dom.com/index.php?entryPoint=WebToLeadCapture" method="POST" name="WebToLeadForm">
+
+                        <div class="form_group">
+                            <input type="text" id="section_intro_name" value="" name="last_name" class="plan_form_input margin-right-full no-margin-right required" placeholder="Ваше имя">
+                        </div>
+                        <br>
+                        <div class="form_group">
+                            <input type="tel" id="section_intro_tel" class="plan_form_input required" value="" name="phone_mobile" placeholder="Ваш телефон">
+                        </div>
+                        <br>
+                        <input type="submit" value="получить" class="plan_form_submit form_submit_red form_submit_red_modal required">
+
+                        <input id="assigned_user_id" type="hidden" name="assigned_user_id" value="" />
+                        <input id="campaign_id" type="hidden" name="campaign_id" value="8797054e-8c36-5671-5e39-5572a5526bf3" />
+                        <input type="hidden" name="hidden" value="Посетите готовые дома" />
+                        <input type="hidden" name="lead_source" value="Web Site" />
+                        <input type="hidden" name="redirect_url" value="/thank-you.php" />
+                        <input type="hidden" name="req_id" value="last_name;" />
+                        <input type="hidden" name="lead_source_description" value="" />
+                    </form>
+                </div>
+                <!-- end body -->
+                <div class="modal-footer modal-footer-projects">
+
+                </div>
+                <!-- end footer -->
+            </div>
+        </div>
+    </div>
+    <!-- end modal progect download-->
+
+
+    <!-- Modal 15 plus-->
+    <div class="modal fade modal-progects" id="15_plus" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header modal-header-projects">
+                    <button type="button" class="close close-button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <div class="clearfix"></div>
+                </div>
+                <!-- end header -->
+                <div class="modal-body modal-body-projects">
+                    <h3 class="projects-modal-h3">Наш менеджер с удовольствием расскажет<br>про все преимущества в поселке</h3>
+                    <form class="plan_form form_center validate" action="https://crm.everest-dom.com/index.php?entryPoint=WebToLeadCapture" method="POST" name="WebToLeadForm">
+
+                        <div class="form_group">
+                            <input type="text" id="section_intro_name" value="" name="last_name" class="plan_form_input margin-right-full no-margin-right required" placeholder="Ваше имя">
+                        </div>
+                        <br>
+                        <div class="form_group">
+                            <input type="tel" id="section_intro_tel" class="plan_form_input required" value="" name="phone_mobile" placeholder="Ваш телефон">
+                        </div>
+                        <br>
+                        <input type="submit" value="Хочу узнать" class="plan_form_submit form_submit_red form_submit_red_modal required">
+
+                        <input id="assigned_user_id" type="hidden" name="assigned_user_id" value="" />
+                        <input id="campaign_id" type="hidden" name="campaign_id" value="8797054e-8c36-5671-5e39-5572a5526bf3" />
+                        <input type="hidden" name="hidden" value="15 причин о Поселке Лебедево" />
+                        <input type="hidden" name="lead_source" value="Web Site" />
+                        <input type="hidden" name="redirect_url" value="/thank-you.php" />
+                        <input type="hidden" name="req_id" value="last_name;" />
+                        <input type="hidden" name="lead_source_description" value="" />
+                    </form>
+                </div>
+                <!-- end body -->
+                <div class="modal-footer modal-footer-projects">
+
+                </div>
+                <!-- end footer -->
+            </div>
+        </div>
+    </div>
+    <!-- end modal 15 plus-->
+
+
+    <!-- Modal genplan-->
+    <div class="modal fade modal-progects" id="Genplan" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header modal-header-projects">
+                    <button type="button" class="close close-button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <div class="clearfix"></div>
+                </div>
+                <!-- end header -->
+                <div class="modal-body modal-body-projects">
+                    <h3 class="projects-modal-h3">Получите генплан поселка<br>прямо сейчас</h3>
+
+                    <form class="plan_form form_center validate" action="https://crm.everest-dom.com/index.php?entryPoint=WebToLeadCapture" method="POST" name="WebToLeadForm">
+                        <div class="form_group">
+                            <input type="text" id="section_intro_name" value="" name="last_name" class="plan_form_input margin-right-full no-margin-right required" placeholder="Ваше имя">
+                        </div>
+                        <br>
+                        <div class="form_group">
+                            <input type="tel" id="section_intro_tel" class="plan_form_input required" value="" name="phone_mobile" placeholder="Ваш телефон">
+                        </div>
+                        <br>
+                        <input type="submit" value="Получить генплан" class="plan_form_submit form_submit_red form_submit_red_modal required">
+
+                        <input id="assigned_user_id" type="hidden" name="assigned_user_id" value="" />
+                        <input id="campaign_id" type="hidden" name="campaign_id" value="8797054e-8c36-5671-5e39-5572a5526bf3" />
+                        <input type="hidden" name="hidden" value="Посетите готовые дома" />
+                        <input type="hidden" name="lead_source" value="Web Site" />
+                        <input type="hidden" name="redirect_url" value="/thank-you.php" />
+                        <input type="hidden" name="req_id" value="last_name;" />
+                        <input type="hidden" name="lead_source_description" value="" />
+
+
+                    </form>
+                </div>
+                <!-- end body -->
+                <div class="modal-fooessr modal-footer-projects">
+
+                </div>
+                <!-- end footer -->
+            </div>
+        </div>
+    </div>
+    <!-- end modal genplan-->
+
+
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- <link href="css/animate.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet"> -->
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!-- Load CSS -->
+
+    <script>
+        function loadCSS(hf) {
+            var ms = document.createElement("link");
+            ms.rel = "stylesheet";
+            ms.href = hf;
+            document.getElementsByTagName("head")[0].appendChild(ms);
+        }
+
+        loadCSS("bootstrap.min.css"); //Load Libs CSS: Animate CSS
+        loadCSS("animate.css"); //Header Styles (compress & paste to header after release)
+        loadCSS("style.css"); //User Styles: Main
+        // Header
+        loadCSS("media.css"); // Media
+
+    </script>
+	<script id="amojs" src="https://lebedevo-life.ru/libs/jquery1_12_4.min.js"></script>
+    
+    <script id="amojs" src="https://townsbuilders.com/amoCRM/amocrm.js?site=lebedevo-life"></script>
+    <script id="amojs" src="https://townsbuilders.com/amoCRM/cookie.js?site=townbuilders-sever1"></script>
+   
+
+
+   <script>
+	jQuery(".text_review").each(function(){
+		var review_full = jQuery(this).html();
+		var review = review_full;
+
+		if( review.length > 300 )
+		{
+			review = review.substring(0, 300);
+			jQuery(this).html( review + '<div class="read_more"> читать полностью &rarr;</div>' );
+		}
+		jQuery(this).append('<div class="full_text" style="display: none;">' + review_full + '</div>');
+	 });
+
+	 jQuery(".read_more").click(function(){
+		jQuery(this).parent().html( jQuery(this).parent().find(".full_text").html() );
+	 });
+
+   </script>
+	<!-- Load Scripts -->
+    <script>
+	var scr = {"scripts":[
+     {"src" : "https://lebedevo-life.ru/libs/jquery1_12_4.min.js", "async" : false},
+     {"src" : "js/fix_menu.js", "async" : false},
+     {"src" : "js/bootstrap.min.js", "async" : false},
+     {"src" : "js/jquery.maskedinput.min.js", "async" : false},
+     {"src" : "js/validate.js", "async" : false},
+     {"src" : "js/responsiveslides.min.js", "async" : false},
+     {"src" : "js/wow.min.js", "async" : false},
+     {"src" : "libs/api_yandex_2_1.1", "async" : false},
+     {"src" : "js/sourcebuster.min.js", "async" : false},
+     {"src" : "js/main.js", "async" : false},
+	 {"src" : "https://townsbuilders.com/amoCRM/amocrm.js?site=lebedevo-life", "async" : false},
+	  {"src" : "https://townsbuilders.com/amoCRM/cookie.js?site=lebedevo-life", "async" : false},
+     ]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+        /*var scr = {
+            "scripts": [
+                {
+                    "src": "js/jquery.maskedinput.min.js",
+                    "async": false
+                },
+                {
+                    "src": "js/validate.js",
+                    "async": false
+                },
+                {
+                    "src": "js/responsiveslides.min.js",
+                    "async": false
+                },
+                {
+                    "src": "js/wow.min.js",
+                    "async": false
+                },
+                {
+                    "src": "libs/api_yandex_2_1.1",
+                    "async": false
+                },
+                {
+                    "src": "js/sourcebuster.min.js",
+                    "async": false
+                },
+                {
+                    "src": "js/main.js",
+                    "async": false
+                },
+                {
+                    "src": "https://townsbuilders.com/amoCRM/amocrm.js?site=lebedevo-life",
+                    "async": false
+                },
+                {
+                    "src": "https://townsbuilders.com/amoCRM/cookie.js?site=lebedevo-life",
+                    "async": false
+                },
+            ]
+        };
+        ! function(t, n, r) {
+            "use strict";
+            var c = function(t) {
+                if ("[object Array]" !== Object.prototype.toString.call(t)) return !1;
+                for (var r = 0; r < t.length; r++) {
+                    var c = n.createElement("script"),
+                        e = t[r];
+                    c.src = e.src, c.async = e.async, n.body.appendChild(c)
+                }
+                return !0
+            };
+            t.addEventListener ? t.addEventListener("load", function() {
+                c(r.scripts);
+            }, !1) : t.attachEvent ? t.attachEvent("onload", function() {
+                c(r.scripts)
+            }) : t.onload = function() {
+                c(r.scripts)
+            }
+        }(window, document, scr);
+*/
+    </script>
+
+    <script type="text/javascript">
+        var _alloka = {
+            objects: {
+                'de7c41d6b2c8a636': {
+                    block_class: 'phone_alloka',
+                    format: '<a href="call:8#{XXXXХХХХХХ}"><span>8 (#{XXXX})</span> #{XX}-#{XX}-#{XX}</a>', 
+// format: '<span>8 (#{XXXX})</span> #{XX}-#{XX}-#{XX}',
+                    jivosite: false
+                }
+            },
+            trackable_source_types: ["type_in", "referrer", "utm"],
+            last_source: false,
+            use_geo: true
+        };
+
+    </script>
+    <script src="https://analytics.alloka.ru/v4/alloka.js" type="text/javascript"></script>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function(d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter42885199 = new Ya.Metrika({
+                        id: 42885199,
+                        clickmap: true,
+                        trackLinks: true,
+                        accurateTrackBounce: true,
+                        webvisor: true,
+                        trackHash: true
+                    });
+                } catch (e) {}
+            });
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function() {
+                    n.parentNode.insertBefore(s, n);
+                };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else {
+                f();
+            }
+        })(document, window, "yandex_metrika_callbacks");
+
+    </script> <noscript><div><img src="https://mc.yandex.ru/watch/42885199" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+
+<script>
+  $(document).on('click', 'form[name="WebToLeadForm"] input[type="submit"]', function() {
+    var phone = $(this).closest('form').find('#phone_mobile').val();
+    if (phone !== 'undefined' && phone!="") {
+      $('form[name="WebToLeadForm"]').attr("action", "http://lebedevo-life.ru/roistat.php");
+    }
+  });
+</script>
+
+<script>
+(function(w, d, s, h, id) {
+    w.roistatProjectId = id; w.roistatHost = h;
+    var p = d.location.protocol == "https:" ? "https://" : "http://";
+    var u = /^.*roistat_visit=[^;]+(.*)?$/.test(d.cookie) ? "/dist/module.js" : "/api/site/1.0/"+id+"/init";
+    var js = d.createElement(s); js.async = 1; js.src = p+h+u; var js2 = d.getElementsByTagName(s)[0]; js2.parentNode.insertBefore(js, js2);
+})(window, document, 'script', 'cloud.roistat.com', 'fbdf361bf48da9c66674091589d057b8');
+</script>
+
+</body>
+
+</html>

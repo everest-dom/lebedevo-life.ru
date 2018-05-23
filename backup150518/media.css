@@ -1,0 +1,353 @@
+@media only screen and (max-width:992px) {
+    #header {
+        min-height: 100vh;
+        background-image: url('./img/bg_new.jpg');
+        background-position: bottom center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .header__bg {
+        display: none;
+    }
+    .header-top_right .contant_info_tel a,
+    .header-top_right .contant_info_tel span {
+        color: #fff !important;
+    }
+
+    .genplan_wrap {
+        display: none
+    }
+
+    .main_menu {
+        padding-top: 0
+    }
+    .location_left {
+        padding-top: 0
+    }
+    .location_left_wrap {
+        width: 100%;
+        text-align: center;
+        padding-top: 20px
+    }
+    .logo_everest_p {
+        padding-top: 0
+    }
+    .location_left_wrap p {
+        display: inline-block
+    }
+    .logo_everest_img {
+        padding-top: 0;
+        width: initial
+    }
+    .main_menu_ul {
+        padding: initial;
+        text-align: center
+    }
+    .main_menu_left {
+        width: initial;
+        display: block;
+        float: none
+    }
+    .logo_min {
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+        display: none;
+        position: absolute;
+        bottom: 12px;
+        margin-left: 51px
+    }
+    .contant_info_tel {
+        display: block
+    }
+    .RBSticky {
+        -webkit-background-size: cover;
+        background-size: cover;
+        height: auto;
+        top: 0;
+    }
+    .contant_info {
+        display: block;
+        float: none;
+        margin-right: 60px;
+        margin-bottom: 21px
+    }
+}
+
+@media only screen and (max-width:980px) {
+    .main_menu {
+        padding-top: 0
+    }
+    .header-top {
+        padding: 0 15px
+    }
+    .header-top_right {
+        float: right
+    }
+    .header_col h1 {
+        text-align: center;
+        padding: 0 5px;
+        text-shadow: 0 0 3px rgba(0, 0, 0, 0.9)
+    }
+    .looked-heading__wrap h1 {
+        text-align: left;
+        font-size: 30px;
+
+    }
+    #header.second .header_col h1 {
+        font-size: 40px;
+        text-shadow: 0 0 8px white;
+        margin: auto
+    }
+    #header.second #Genplan {
+        background-color: rgba(0, 0, 0, 0.57);
+        padding: 10px;
+        border-radius: 5px
+    }
+    .header_col h1>br {
+        display: none
+    }
+    .h2_main_white {
+        text-align: center
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .looked-heading__wrap {
+        padding-bottom: 40px;
+    }
+    .looked-heading__wrap h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+    .looked-subtitle {
+        font-size: 16px
+    }
+    .looked-descr {
+        display: none;
+    }
+    .sandwich-button {
+        margin-top: 34px;
+        text-align: center;
+        display: inline-block
+    }
+    .main_menu_ul {
+        display: none;
+        padding: 13px;
+        border-radius: 10px
+    }
+    .main_menu_ul li {
+        display: block;
+        margin: 3px 0;
+        border-bottom: 1px solid white
+    }
+    .contant_info {
+        margin-top: 15px;
+        margin-right: 0;
+        float: right
+    }
+    .main_menu_ul {
+        display: none
+    }
+    .h2_main {
+        text-align: center;
+        font-size: 32px
+    }
+    .rslides1 {
+        margin-top: 0
+    }
+    .numbers_sub-title_p {
+        font-size: 12px
+    }
+    .main_menu_left {
+        display: none
+    }
+    .zakaz_ekrsk_form .form_group {
+        display: block;
+        margin: 20px 0;
+        width: initial
+    }
+    .form_group .zakaz_ekrsk_input {
+        width: 300px;
+        display: block;
+        margin: 0 auto
+    }
+    .zakaz_ekrsk_button {
+        display: block;
+        margin: 0 auto
+    }
+    .logo_everest_img {
+        display: block;
+        margin: 0 auto;
+        padding-bottom: 10px
+    }
+    .logo_everest_p {
+        margin-bottom: 20px
+    }
+    .RBSticky .contant_info {
+        text-align: center;
+        margin-top: 10px
+    }
+    .contant_info .contant_info_tel a {
+        display: block
+    }
+    .contant_info .contant_info_tel {
+        display: block
+    }
+    .contant_info .contant_info_a {
+        margin: 0
+    }
+    .animated {
+        -o-transition-property: none!important;
+        -moz-transition-property: none!important;
+        -ms-transition-property: none!important;
+        -webkit-transition-property: none!important;
+        transition-property: none!important;
+        -o-transform: none!important;
+        -moz-transform: none!important;
+        -ms-transform: none!important;
+        -webkit-transform: none!important;
+        transform: none!important;
+        -webkit-animation: none!important;
+        -moz-animation: none!important;
+        -o-animation: none!important;
+        -ms-animation: none!important;
+        animation: none!important
+    }
+}
+
+@media only screen and (max-width:640px) {
+    #header {
+        background-image: unset;
+        background-position: unset;
+        background-repeat: unset;
+        background-size: unset;
+        background-color: #215699;
+    }
+    .header_h1 {
+        font-size: 30px;
+    }
+
+    section#header.looked {
+        background-size: cover
+    }
+    .opinion-video {
+        width: 100%
+    }
+    .section5_wrap .item_house.col-xs-6 {
+        width: 100%
+    }
+    .genplan_wrap {
+        margin-top: 100px
+    }
+    .header-top_left {
+        margin-bottom: 20px
+    }
+
+    .header-top_left_img {
+        padding-right: 0;
+    }
+
+    .header-top_right,
+    .header-top_left {
+        float: unset;
+    }
+
+    .header-top {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:560px) {
+    .row_section_2 {}
+    .col-xs-6.col-numbers {
+        width: 100%
+    }
+
+    .looked-heading__wrap {
+        background: unset;
+    }
+
+    .looked-heading__wrap h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:430px) {
+    .row_section_2 {}
+    .col-xs-6.col-numbers {
+        width: 100%
+    }
+}
+
+@media only screen and (max-width:380px) {
+    .opinion-video {
+        width: 280px
+    }
+    .otziv_left {
+        width: 100%;
+        margin: 0 auto
+    }
+    .otziv_right {
+        width: initial
+    }
+    .otziv_img {
+        display: block;
+        margin: 0 auto 20px
+    }
+    .main_menu {
+        padding-top: 0
+    }
+    .genplan_wrap {
+        margin-top: 50px
+    }
+    .header-top {
+        margin-top: 30px
+    }
+    .header_h1 {
+        margin-top: 20px
+    }
+    .header-top_left_img {
+        margin-right: 0;
+        display: block;
+        max-width: 100%
+    }
+    .header_col {
+        text-align: center
+    }
+    .header-top_left {
+        float: none;
+        margin: 0 auto 20px;
+        display: inline-block
+    }
+    .header-top_right {
+        float: none;
+        display: inline-block;
+        margin: 0 auto
+    }
+    .h2_main {
+        font-size: 30px
+    }
+    .item_button {
+        width: 75%
+    }
+    .col-numbers-last {
+        width: 270px
+    }
+    .col-numbers {
+        margin-top: 50px
+    }
+    .form_group .zakaz_ekrsk_input {
+        width: 90%
+    }
+    .location_left_wrap p {
+        display: block
+    }
+}
+
+@media only screen and (max-width:320px) {
+    .h2_main {
+        font-size: 30px
+    }
+}
